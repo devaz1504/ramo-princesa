@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Para ti, Princesa ❤️</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 30px 15px;
+      font-family: Georgia, serif;
+      text-align: center;
+      color: white;
+      background:
+        radial-gradient(ellipse at top, #42151d, #09070a 75%);
+    }
+
+    h1 {
+      color: #fff0f0;
+      font-size: clamp(30px, 6vw, 48px);
+      text-shadow: 0 0 18px #b51f35;
+      margin-bottom: 8px;
+    }
+
+    .subtitulo {
+      color: #f3d6d6;
+      font-style: italic;
+      font-size: 18px;
+    }
+
+    .marco {
+      max-width: 620px;
+      margin: 28px auto;
+      padding: 12px;
+      border: 1px solid #c6a15b;
+      border-radius: 18px;
+      background: linear-gradient(
+        135deg, #241014, #080808, #3b1018
+      );
+      box-shadow: 0 0 35px #b31e3540;
+    }
+
+    .ramo {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .tarjeta {
+      max-width: 550px;
+      margin: 25px auto;
+      padding: 25px 15px;
+      border: 1px solid #c6a15b;
+      border-radius: 16px;
+      background: #170d10;
+      box-shadow: 0 0 20px #8c192a33;
+    }
+
+    .tarjeta h2 {
+      margin: 0 0 15px;
+      color: #ffb8c1;
+      font-size: clamp(27px, 5vw, 38px);
+    }
+
+    .tarjeta p {
+      color: #fff0e8;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .corazon {
+      color: #ff344f;
+      font-size: 25px;
+    }
+
+    button {
+      padding: 14px 25px;
+      margin: 5px;
+      border: 1px solid #f2c9a0;
+      border-radius: 30px;
+      background: linear-gradient(
+        135deg, #a71931, #5d091b
+      );
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform .2s, background .2s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: #c52b45;
+    }
+
+    #mensaje {
+      min-height: 30px;
+      color: #ffd5dc;
+      font-size: 17px;
+    }
+
+    footer {
+      color: #cbb5b5;
+      font-size: 13px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>❤️ Para ti, Princesa ❤️</h1>
+
+  <p class="subtitulo">
+    Un detalle especial hecho con mucho cariño.
+  </p>
+
+  <div class="marco">
+    <img
+      class="ramo"
+      src="ramo.jpg"
+      alt="Ramo elegante de rosas rojas y blancas"
+    >
+  </div>
+
+  <section class="tarjeta">
+    <div class="corazon">♥ ♥ ♥</div>
+
+    <h2>Para ti, Princesa</h2>
+
+    <p>
+      Te regalo estas rosas como símbolo
+      de cariño, ternura y admiración.
+    </p>
+
+    <p>
+      Que nunca te falten motivos para sonreír
+      y razones para sentirte especial.
+    </p>
+
+    <div class="corazon">🌹 ❤️ 🌹</div>
+  </section>
+
+  <button onclick="mostrarMensaje()">
+    ❤️ Pulsa aquí, princesa ❤️
+  </button>
+
+  <p id="mensaje"></p>
+
+  <footer>
+    Hecho especialmente para ti ♥
+  </footer>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById("mensaje").textContent =
+        "Eres una persona muy especial. Este ramo es para ti. ❤️🌹";
+    }
+  </script>
+
+</body>
+</html>
